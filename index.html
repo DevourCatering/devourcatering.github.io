@@ -1,11 +1,15 @@
-<html>
+<html ng-app="menuStore">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <title>Devour Catering Company - India</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="stylesheets/main.css">
   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome-4.2.0/css/font-awesome.css">
   <link rel="icon" href="images/icon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+  <script src="/scripts/menu.js"></script>
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -14,7 +18,79 @@
   <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
-  <body>
-    
+  <body ng-controller="StoreController as store">
+    <div id="top" class="jumbotron img-bg">
+        <div class="bg"></div>
+        <div class="top">
+          <h1>Devour</h1>
+          <p class="tagline">The Catering Company</p>
+        </div>
+        <div class="submenu topmenu">
+          <a href="#about"><span>About</span></a>
+          <a href="#menu"><span>Menu</span></a>
+          <a href="#gallery"><span>Gallery</span></a>
+          <a href="#contact"><span>Contact Us</span></a>
+        </div>
+        <a class="midcenter" href="#about"><i class="fa fa-angle-down fa-4x"></i></a>
+      </div>
+      <div id="about" class="jumbotron white">
+        <h2>About Us</h2>
+        <div class="data">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus, mi eu sagittis ullamcorper, risus orci laoreet dolor, convallis dignissim ligula arcu ut dolor. Nulla sem tortor, pellentesque id tempus id, sagittis eu augue. Aliquam erat volutpat. Etiam ultrices turpis ac turpis finibus lobortis. Etiam ut congue felis. Sed urna odio, ultrices tincidunt nunc ut, blandit dignissim massa. Vivamus iaculis sapien vel molestie pharetra. In sagittis accumsan magna vitae condimentum. Vestibulum sit amet dolor volutpat, finibus nisl ac, malesuada est. Vestibulum vitae molestie mauris, at ultrices sapien. </p>
+            <p>Maecenas interdum pretium urna, a suscipit est scelerisque non. Pellentesque odio magna, fringilla vitae ligula eu, sollicitudin rutrum sapien. Vivamus congue accumsan gravida. Maecenas semper velit lectus, id malesuada ligula vestibulum porta. Vestibulum tempus metus et mollis imperdiet. Cras lorem odio, auctor eget elit a, pharetra rhoncus orci. Nam malesuada maximus commodo. Morbi vel magna dui.</p>
+      </div>
+      </div>
+      <div id="menu" class="jumbotron embroid">
+        <h2>Menu</h2>
+        <div class="submenu cusine">
+          <span ng-click="clicked('indian')">Indian</span>
+          <span ng-click="clicked('italian')">Italian</span>
+          <span>Thai</span>
+          <span>Chinese</span>
+          <span>Mexican</span>
+        </div>
+        <div id="" class="menu-items show">
+          <span class="row">
+            <div class="soups">
+              <h3>Soups</h3>
+              <ol  ng-repeat="item in store.menus">
+                <li ng-repeat="val in item.soups | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" >{{val.name}} </div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+              </ol>
+            </div>
+            <div class="salads">
+              <h3>Salads</h3>
+              <ol  ng-repeat="item in store.menus">
+                <li ng-repeat="val in item.salads | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" >{{val.name}} </div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+              </ol>
+            </div>
+          </span>
+          <div class="header appetizers">
+            <h3>Appetizers</h3>
+            <ol  ng-repeat="item in store.menus">
+              <li ng-repeat="val in item.appetizers | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" >{{val.name}} </div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+            </ol>
+          </div>
+          <div class="header main">
+            <h3>Main</h3>
+            <ol  ng-repeat="item in store.menus">
+              <li ng-repeat="val in item.main | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" >{{val.name}} </div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+            </ol>
+          </div>
+          <div class="header desert">
+            <h3>Desert</h3>
+            <ol  ng-repeat="item in store.menus">
+              <li ng-repeat="val in item.desert | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" >{{val.name}}</div> <amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+            </ol>
+          </div>
+          <!--i class="fa fa-angle-right fa-4x right"></i-->
+        </div>
+      </div>
+      <div id="gallery" class="jumbotron white">
+        <h2>Gallery</h2>
+      </div>
+      <div id="contact" class="jumbotron">
+        <h2>Contact Us</h2>
+      </div>
+      <script src="/scripts/resize.js"></script>
   </body>
 </html>
