@@ -2,7 +2,6 @@
 
     // set height of the main top page the same as height of browser window
     $(".top").height = $(window).height();
-
     // set equal height for all jumbotrons
     function heightJumbotrons() {
         for (var i = 0; i < $(".jumbotron").length; i++) {

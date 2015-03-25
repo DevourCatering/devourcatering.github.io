@@ -127,11 +127,7 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-image:url('/images/bg3.svg');
+  background-image:url('/images/food.png');
 }
 
 .jumbotron {
@@ -182,6 +178,7 @@ a {
 
 .submenu span:hover {
   background: rgba(33,33,33,0.5);
+  cursor: pointer;
 }
 
 .midcenter {
@@ -191,9 +188,12 @@ a {
 }
 
 .white{
-  background: #fff;
+  background: url('/images/ricepaper.png');
 }
 
+#contact{
+  background: url('/images/confectionary.png');
+}
 
 p.tagline {
   font-size: 2em;
@@ -211,6 +211,11 @@ p.tagline {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 1.5em;
+  text-align:left;
+  -webkit-margin-after: 0.2em;
+}
 h1 {
   font-family: 'Courgette';
   color: #fff;
@@ -221,7 +226,6 @@ h1 {
 
 
 h2 {
-  margin-left: 2%;
   font-family: 'Ubuntu';
   font-size: 3em;
   letter-spacing: 0.5px;
@@ -264,7 +268,7 @@ h2:after {
 }
 
 .show {
-  display: block;
+  display: block!important;
 }
 
 .header {
@@ -326,5 +330,75 @@ li {
   margin-top: 10px;
 }
 .val {
-  vertical-align: top; width:60%; display:inline-block;
+  vertical-align: top; width:70%; display:inline-block;
+}
+
+.selected{
+  font-weight: bold;
+  background: rgba(0,0,0,0.6);
+}
+
+.subtext{
+  font-size: 11.5px;
+  font-style: italic;
+  font-family: 'Raleway';
+}
+#contact {
+  height: auto;
+}
+#contact .row {
+  width: 40%;
+  text-align: left;
+}
+
+.number {
+  font-size: 15px;
+}
+.number a {
+  color: #000;
+}
+
+iframe {
+  border: 2px solid #333;
+
+}
+
+.footer {
+  background: rgba(0,0,0,0.8);
+  width:100%;
+  color: #fff;
+  padding: 2%;
+}
+
+.options {
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  color: #fff;
+  width:100%;
+  padding: 2%;
+  font-family: 'Raleway';
+  font-size: 13px;
+}
+
+.options:hover {
+  cursor: pointer;
+}
+
+#choices div {
+  display:inline-block;
+  width: 45%;
+  margin-top: 5%;
+}
+#choicesPizza span {
+  margin-top: 5%;
+}
+#choices, #choicesPizza {
+  display:none;
+}
+.left {
+  float:left;
+}
+
+#choices .right {
+  margin-top:0;
 }
