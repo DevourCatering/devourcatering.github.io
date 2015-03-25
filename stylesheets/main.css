@@ -162,8 +162,13 @@ body {
 }
 
 .cusine {
-  background: rgba(255, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   padding: 1.0%;
+  color: #fff;
+}
+
+#menu {
+  color: #333;
 }
 
 .submenu span {
@@ -191,9 +196,6 @@ a {
   background: url('/images/ricepaper.png');
 }
 
-#contact{
-  background: url('/images/confectionary.png');
-}
 
 p.tagline {
   font-size: 2em;
@@ -315,6 +317,7 @@ Menu
 
 .thai {
   font-family: 'Poiret One';
+  font-weight: 700;
 }
 
 amt {
@@ -330,7 +333,7 @@ li {
   margin-top: 10px;
 }
 .val {
-  vertical-align: top; width:70%; display:inline-block;
+  vertical-align: top; width:70%; display:inline-block; font-size: 17px;
 }
 
 .selected{
@@ -343,9 +346,6 @@ li {
   font-style: italic;
   font-family: 'Raleway';
 }
-#contact {
-  height: auto;
-}
 #contact .row {
   width: 40%;
   text-align: left;
@@ -353,6 +353,8 @@ li {
 
 .number {
   font-size: 15px;
+  display:block;
+  margin-top: 2%;
 }
 .number a {
   color: #000;
