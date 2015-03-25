@@ -28,6 +28,7 @@
         <div class="submenu topmenu">
           <a href="#about"><span>About</span></a>
           <a href="#menu"><span>Menu</span></a>
+          <a href="#packages"><span>Packages</span></a>
           <a href="#gallery"><span>Gallery</span></a>
           <a href="#contact"><span>Contact Us</span></a>
         </div>
@@ -54,39 +55,46 @@
             <div class="soups">
               <h3>Soups</h3>
               <ol  ng-repeat="item in store.menus">
-                <li ng-repeat="val in item.soups | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" ng-bind-html="val.name | unsafe"></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+                <li ng-repeat="val in item.soups | filter:{cuisine: typefilter} | orderBy: 'name'" ><div class="val">{{val.name}}<br/><span class="subtext" ng-bind-html="val.description | unsafe"></span></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
               </ol>
             </div>
             <div class="salads">
               <h3>Salads</h3>
               <ol  ng-repeat="item in store.menus">
-                <li ng-repeat="val in item.salads | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" ng-bind-html="val.name | unsafe"></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+                <li ng-repeat="val in item.salads | filter:{cuisine: typefilter} | orderBy: 'name'" ><div class="val" >{{val.name}}<br/><span class="subtext" ng-bind-html="val.description | unsafe"></span></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
               </ol>
             </div>
           </span>
           <div class="header appetizers">
             <h3>Appetizers</h3>
             <ol  ng-repeat="item in store.menus">
-              <li ng-repeat="val in item.appetizers | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" ng-bind-html="val.name | unsafe"></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+              <li ng-repeat="val in item.appetizers | filter:{cuisine: typefilter} | orderBy: 'name'" ><div class="val" >{{val.name}}<br/><span class="subtext" ng-bind-html="val.description | unsafe"></span></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
             </ol>
           </div>
           <div class="header main">
             <h3>Main</h3>
             <ol  ng-repeat="item in store.menus">
-              <li ng-repeat="val in item.main | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" ng-bind-html="val.name | unsafe"></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+              <li ng-repeat="val in item.main | filter:{cuisine: typefilter} | orderBy: 'name'" ><div class="val" >{{val.name}}<br/><span class="subtext" ng-bind-html="val.description | unsafe"></span></div><amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
             </ol>
           </div>
           <div class="header desert">
             <h3>Desert</h3>
             <ol  ng-repeat="item in store.menus">
-              <li ng-repeat="val in item.desert | filter:{cuisine: typefilter} | orderBy: 'name'" class="{{val.cuisine}}"><div class="val" ng-bind-html="val.name | unsafe"></div> <amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
+              <li ng-repeat="val in item.desert | filter:{cuisine: typefilter} | orderBy: 'name'"><div class="val" >{{val.name}}<br/><span class="subtext" ng-bind-html="val.description | unsafe"></span></div> <amt><i class="fa fa-inr fa-fw"></i> {{val.price}}</amt></li>
             </ol>
           </div>
           <!--i class="fa fa-angle-right fa-4x right"></i-->
         </div>
         *All food is purely vegetarian. Jain available on request.
       </div>
-      <div id="gallery" class="jumbotron white">
+      <div id="packages" class="jumbotron white">
+        <h2>Packages</h2>
+        <p> Though the menu is categorized in cuisines, we are happy to mix and create a menu that fancy to your taste buds.</p>
+        <p> We carter parties, high tea receptions and small gatherings. We have it all from finger foods to an array of a five course food spread.</p>
+        <p>If the celebration involves more than 30 pax, we are more than happy to fill your tummy and put you to ease – yes, we will go light on your wallet”</p>
+        Contact us to know more!
+      </div>
+      <div id="gallery" class="jumbotron ">
         <h2>Gallery</h2>
         <div class="submenu cusine">
           <span>Indian</span>
@@ -95,9 +103,9 @@
           <span>Chinese</span>
           <span>Mexican</span>
         </div>
-        <p style="font-size: 35px; margin-top: 10%;">Delicious dishes on their way.</p>
+        <p style="font-size: 35px; margin-top: 10%;"><em>Delicious dishes on their way.</em></p>
       </div>
-      <div id="contact" class="jumbotron">
+      <div id="contact" class="jumbotron white">
         <h2>Contact Us</h2>
         <div class="row">
           <h4>Mana Doshi</h4>
@@ -105,8 +113,9 @@
           <span class="number"><b>Email: </b><a href="mailto:orders@devourcatering.co">orders@devourcatering.co</a>
           <h4>Address</h4>
           <span class="number"><a href="https://www.google.com/maps/place/Echjay+House,+Carmichael+Rd,+Gamadia+Colony,+Tardeo,+Mumbai,+Maharashtra+400026,+India/@18.9696968,72.811498,17z/data=!3m1!4b1!4m2!3m1!1s0x3be7ce715fa1c1a1:0xe4379e0be34892e7">Echjay House<br/>
-Carmichael Rd, Gamadia Colony, Tardeo<br/>
-Mumbai, Maharashtra 400026<br/>
+31 - A Carmichael Rd,<br/>
+Opposite Smoking Joes, <br/>
+Mumbai, Maharashtra 400026,<br/>
 India</a></span>
         </div>
         <div class="header">
