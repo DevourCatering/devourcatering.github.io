@@ -151,9 +151,9 @@
         {name:"Mexican rice", description: "", price:"xxx", cuisine:"mexican"}
       ],
       desert: [
-        {name:"Gulab Jamun", description: "95", price:"xxx", cuisine:"indian"},
-        {name:"Malai Kulfi", description: "90", price:"xxx", cuisine:"indian"},
-        {name:"Seasonal Ice Cream", description: "80", price:"xxx", cuisine:"indian"},
+        {name:"Gulab Jamun", description: "", price:"95", cuisine:"indian"},
+        {name:"Malai Kulfi", description: "", price:"90", cuisine:"indian"},
+        {name:"Seasonal Ice Cream", description: "", price:"80", cuisine:"indian"},
         {name:"Tiramisu", description: "", price:"xxx", cuisine:"italian"},
         {name:"Chocolate Moussee", description: "", price:"xxx", cuisine:"italian"},
         {name:"Hand Crafted Sorbet", description: "", price:"xxx", cuisine:"italian"},
