@@ -260,7 +260,7 @@ li {
   display:block;
   margin-top: 2%;
 }
-.number a {
+.number a, #packages a {
   color: #000;
 }
 
@@ -273,7 +273,7 @@ iframe {
   background: rgba(0,0,0,0.8);
   width:100%;
   color: #fff;
-  padding: 2%;
+  padding: 1.5%;
   margin-top: 3%;
 }
 
@@ -301,6 +301,9 @@ iframe {
 }
 #choices, #choicesPizza, #choicesRoti {
   display:none;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
 }
 .left {
   float:left;
@@ -355,9 +358,15 @@ ul.price li:before {
   margin-top: 0;
 }
 
-.number a:hover {
+.number a:hover, #packages a:hover, .sign a:hover {
   color: #2980B9;
   font-weight: bold;
+}
+
+
+#packages a, .sign a {
+  font-weight: bold;
+  color: #F39C12;
 }
 
 .fb-like {
@@ -371,4 +380,16 @@ ul.price li:before {
 .margin {
   margin-right: 5%;
   border-radius: 10px;
+}
+
+#contact {
+  padding-bottom: 0.5em;
+}
+
+.sign {
+  margin: 1%;
+}
+
+.sign .fa {
+  color: #E74C3C;
 }
