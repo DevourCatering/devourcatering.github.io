@@ -311,9 +311,26 @@ iframe {
 }
 
 #packages p {
-  font-size: 20px;
+  font-size: 17px;
   margin: 3% 10%;
 
+}
+
+
+#packages .left {
+  margin-left: 7%;
+}
+#packages .right {
+  margin-right: 7%;
+}
+
+#packages h3 {
+  -webkit-margin-before: 0.3em;
+  -webkit-margin-after: 0.3em;
+}
+
+#packages div.block {
+  display: block;
 }
 
 ul.price {
@@ -333,6 +350,11 @@ ul.price li:before {
   padding-right: 7px;
 }
 
+#packages div {
+  display: inline-block;
+  margin-top: 0;
+}
+
 .number a:hover {
   color: #2980B9;
   font-weight: bold;
@@ -340,4 +362,13 @@ ul.price li:before {
 
 .fb-like {
   margin-top: 10px;
+}
+
+.manadata {
+  display: inline-text;
+}
+
+.margin {
+  margin-right: 5%;
+  border-radius: 10px;
 }
