@@ -77,6 +77,10 @@ Mobile
     text-align:center;
     display:block!important;
   }
+
+  .manadata p {
+    margin: 5% 5%!important;
+  }
 }
 
 /***********
