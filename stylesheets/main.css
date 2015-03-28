@@ -8,11 +8,92 @@ info@mahirk.me
 github.com/mahirk
 
 ******************/
+/*************************
+Mobile
+**************************/
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+  h1 {
+    font-size: 6em!important;
+  }
+  p.tagline {
+    font-size: 0.9em!important;
+  }
+
+  .topmenu span {
+    display: block!important;
+  }
+
+  h2:before, h2:after {
+    width: 15%!important;
+  }
+
+  .left {
+    float: none!important;
+  }
+
+  img.margin {
+    margin: 0;
+  }
+
+  .data {
+    text-align: center!important;
+  }
+  #packages div {
+    display: block!important;
+    float: none!important;
+    margin: 0;
+  }
+
+  #packages .right, #packages .left {
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+
+  #contact .header {
+    display: block;
+    width: 95%!important;
+    margin-top: 5%;
+  }
+  #contact .header h4 {
+    display: none;
+  }
+
+  #menu .row, #menu .header {
+    width: 95%!important;
+    margin-left: 2%;
+  }
+  hld {
+    display: none;
+  }
+  .cusine img {
+    display: inline-block!important;
+  }
+
+  p.otw {
+    font-size: 27px!important;
+  }
+  .menu-items h4 {
+    text-align:center;
+    display:block!important;
+  }
+}
 
 /***********
 Styles
 **********/
-
+.menu-items h4 {
+  display:none;
+}
+.otw {
+  font-size: 35px!important; margin-top: 10%;
+}
+.cusine img {
+  display: none;
+}
+#contact iframe {
+  width: 100%;
+}
 
 body {
     width: 100%;

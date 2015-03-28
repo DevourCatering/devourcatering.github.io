@@ -74,13 +74,14 @@ I live my obsession at DEVOUR ! <br/>Expect attention to every detail , and have
       <div id="menu" class="jumbotron">
         <h2>Menu</h2>
         <div class="submenu cusine">
-          <span ng-class="{selected: typefilter=='indian'}" ng-click="clicked('indian')">Indian</span>
-          <span ng-class="{selected: typefilter=='italian'}" ng-click="clicked('italian')">Italian</span>
-          <span ng-class="{selected: typefilter=='thai'}" ng-click="clicked('thai')">Thai</span>
-          <span ng-class="{selected: typefilter=='chinese'}" ng-click="clicked('chinese')">Chinese</span>
-          <span ng-class="{selected: typefilter=='mexican'}" ng-click="clicked('mexican')">Mexican</span>
+          <span ng-class="{selected: typefilter=='indian'}" ng-click="clicked('indian')"><hld>Indian</hld><img  src="/images/flags/India.png"/></span>
+          <span ng-class="{selected: typefilter=='italian'}" ng-click="clicked('italian')"><hld>Italian</hld><img  src="/images/flags/Italy.png"/></span>
+          <span ng-class="{selected: typefilter=='thai'}" ng-click="clicked('thai')"><hld>Thai</hld><img  src="/images/flags/Thailand.png"/></span>
+          <span ng-class="{selected: typefilter=='chinese'}" ng-click="clicked('chinese')"><hld>Chinese</hld><img src="/images/flags/China.png" /></span>
+          <span ng-class="{selected: typefilter=='mexican'}" ng-click="clicked('mexican')"><hld>Mexican</hld><img src="/images/flags/Mexico.png" /></span>
         </div>
         <div id="" class="menu-items show">
+          <h4>{{typefilter | uppercase}}</h4>
           <span class="row">
             <div class="soups">
               <h3>Soups</h3>
@@ -141,13 +142,13 @@ I live my obsession at DEVOUR ! <br/>Expect attention to every detail , and have
       <div id="gallery" class="jumbotron ">
         <h2>Gallery</h2>
         <div class="submenu cusine">
-          <span>Indian</span>
-          <span>Italian</span>
-          <span>Thai</span>
-          <span>Chinese</span>
-          <span>Mexican</span>
+          <span><hld>Indian</hld><img  src="/images/flags/India.png" /></span>
+          <span><hld>Italian</hld><img  src="/images/flags/Italy.png" /></span>
+          <span><hld>Thai</hld><img  src="/images/flags/Thailand.png" /></span>
+          <span><hld>Chinese</hld><img src="/images/flags/China.png" /></span>
+          <span><hld>Mexican</hld><img src="/images/flags/Mexico.png" /></span>
         </div>
-        <p style="font-size: 35px; margin-top: 10%;"><em>Delicious dishes on their way.</em></p>
+        <p class="otw"><em>Delicious dishes on their way.</em></p>
       </div>
       <div id="contact" class="jumbotron white">
         <h2>Contact Us</h2>
@@ -166,7 +167,7 @@ India</a></span>
         </div>
         <div class="header">
           <h4>Location:</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3773.1338140759262!2d72.81149800000001!3d18.969696799999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce715fa1c1a1%3A0xe4379e0be34892e7!2sEchjay+House%2C+Carmichael+Rd%2C+Gamadia+Colony%2C+Tardeo%2C+Mumbai%2C+Maharashtra+400026%2C+India!5e0!3m2!1sen!2sus!4v1427244487331" width="400" height="300" frameborder="2"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3773.1338140759262!2d72.81149800000001!3d18.969696799999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce715fa1c1a1%3A0xe4379e0be34892e7!2sEchjay+House%2C+Carmichael+Rd%2C+Gamadia+Colony%2C+Tardeo%2C+Mumbai%2C+Maharashtra+400026%2C+India!5e0!3m2!1sen!2sus!4v1427244487331" height="300" frameborder="2"></iframe>
         </div>
         <div class="footer">Devour - The Catering Company (Mumbai, India) &#169; 2015</div>
         <div class="sign">Made with <i class="fa fa-heart"></i> by <a target="_mahir" href="http://mahirk.me"> Mahir Kothary</div>
